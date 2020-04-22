@@ -1,0 +1,80 @@
+from kivy.uix.screenmanager import NoTransition, SlideTransition
+from kivymd.app import MDApp
+from kivymd.uix.navigationdrawer import NavigationLayout
+import json
+from kivy.properties import StringProperty
+from kivymd.uix.list import OneLineIconListItem, MDList
+from kivymd.theming import ThemableBehavior
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.screenmanager import Screen
+
+
+class Landing(Screen):
+
+    def get_data(self):
+        f = open("data.json", "rb")
+        f_data = f.read().decode()
+        data = json.loads(f_data)
+        f.close()
+        return data
+
+    def set_data(self, key, value):
+        data = self.get_data()
+        data[key] = value
+        f = open("data.json", "wb")
+        f.write(json.dumps(data).encode())
+
+    def check_logged(self, *args):
+        data = self.get_data()
+        if data['logged'] == "True":
+            m = self.ids.screen_manager
+            m.transition = NoTransition()
+
+            self.ids.screen_manager.current = "main_screen"
+            self.enable_drawer()
+            m.transition = SlideTransition()
+
+    def enable_drawer(self):
+        self.ids.w_toolbar.left_action_items.append(['menu', lambda x: self.ids.nav_drawer.toggle_nav_drawer()])
+
+    def logout(self):
+        self.ids.w_toolbar.left_action_items = []
+        self.ids.screen_manager.current = 'login_screen'
+        self.set_data("logged", "False")
+
+    def navigate_to(self, page):
+        self.ids.screen_manager.current = page
+
+    def open_menu(self, *args):
+        self.ids.nav_drawer.toggle_nav_drawer()
+
+class ContentNavigationDrawer(BoxLayout):
+    pass
+
+class DrawerList(ThemableBehavior, MDList):
+    def set_color_item(self, instance_item):
+        for item in self.children:
+            if item.text_color == self.theme_cls.primary_color:
+                item.text_color = self.theme_cls.text_color
+                break
+        instance_item.text_color = self.theme_cls.primary_color
+
+class ItemDrawer(OneLineIconListItem):
+    icon = StringProperty()
+
+class MainNavigationLayout(NavigationLayout):
+    def __init__(self, *args, **kwargs):
+        NavigationLayout.__init__(self, *args, **kwargs)
+        self._panel_disable = True
+
+
+class Main(MDApp):
+    def __init__(self, *args, **kwargs):
+        MDApp.__init__(self, *args, **kwargs)
+        self.theme_cls.primary_palette = "Cyan"
+    def build(self):
+        self.root.check_logged()
+
+
+
+Main().run()

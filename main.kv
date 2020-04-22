@@ -1,0 +1,76 @@
+#:include pages/login/login.kv
+#:include pages/pagemain/pagemain.kv
+
+<ItemDrawer>:
+    theme_text_color: "Custom"
+    on_release: self.parent.set_color_item(self)
+    IconLeftWidget:
+        id: icon
+        icon: root.icon
+        theme_text_color: "Custom"
+        text_color: root.text_color
+<ContentNavigationDrawer>:
+    orientation: "vertical"
+    padding: "8dp"
+    spacing: "8dp"
+    AnchorLayout:
+        anchor_x: "left"
+        size_hint_y: None
+        height: avatar.height
+        Image:
+            id: avatar
+            size_hint: None, None
+            size: "56dp", "56dp"
+            source: "data/logo/kivy-icon-256.png"
+    MDLabel:
+        text: "KivyMD library"
+        font_style: "Button"
+        size_hint_y: None
+        height: self.texture_size[1]
+    MDLabel:
+        text: "kivydevelopment@gmail.com"
+        font_style: "Caption"
+        size_hint_y: None
+        height: self.texture_size[1]
+    ScrollView:
+        DrawerList:
+            ItemDrawer:
+                icon: 'folder'
+                text:'Home'
+                on_release:
+                    app.root.ids.screen_manager.current='screen_inicio'
+            ItemDrawer:
+                icon: 'account-multiple'
+                text:'Shared with me'
+                on_release:
+                    app.root.ids.screen_manager.current='screen_segundo'
+            ItemDrawer:
+                icon: 'history'
+                text:'Starrred'
+Landing:
+    NavigationLayout:
+
+        ScreenManager:
+            id:screen_manager
+            PageLogin:
+
+            PageMain:
+                BoxLayout:
+                    orientation: 'vertical'
+                    MDToolbar:
+                        id: w_toolbar
+                        title: "Home Screen"
+                        md_bg_color: app.theme_cls.primary_color
+                        left_action_items: []
+
+                    Widget:
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            ContentNavigationDrawer:
+                id: content_drawer
+
+
+
+
+

@@ -1,20 +1,56 @@
-#:import PageMain pages.pagemain.pagemain
+#:import PageMainGrid pages.pagemain.pagemain
+#:import environ os.environ
+<PageMainGrid>
+    name:'main_screen'
+    on_enter:
+        root.crop_image_for_tile(tile_1, tile_1.size, f'{environ["KITCHEN_SINK_ASSETS"]}beautiful-931152_1280_tile_crop.png')
+        root.crop_image_for_tile(tile_2, tile_2.size, f'{environ["KITCHEN_SINK_ASSETS"]}african-lion-951778_1280_tile_crop.png')
+        root.crop_image_for_tile(tile_3, tile_3.size, f'{environ["KITCHEN_SINK_ASSETS"]}guitar-1139397_1280_tile_crop.png')
+        root.crop_image_for_tile(tile_4, tile_4.size, f'{environ["KITCHEN_SINK_ASSETS"]}robin-944887_1280_tile_crop.png')
+        root.crop_image_for_tile(tile_5, tile_5.size, f'{environ["KITCHEN_SINK_ASSETS"]}kitten-1049129_1280_tile_crop.png')
+        root.crop_image_for_tile(tile_6, tile_6.size, f'{environ["KITCHEN_SINK_ASSETS"]}light-bulb-1042480_1280_tile_crop.png')
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        padding: dp(0),dp(60),dp(0),dp(0)
+        ScrollView:
+            do_scroll_x: False
+            MDGridLayout:
+                cols: 2
+                row_default_height: (self.width - self.cols*self.spacing[0])/self.cols
+                row_force_default: True
+                adaptive_height: True
+                padding: dp(4), dp(4)
+                spacing: dp(4)
 
-<PageMain>:
-    name: "main_screen"
-    StackLayout:
-        orientation: "lr-tb"
-        BoxLayout:
-            orientation: "vertical"
-            size_hint_y: .5
-
-            MDLabel:
-                text: "This is Main Screen of Yours"
-                size_hint: 1, 1
-                valign:'middle'
-
-            MDRaisedButton:
-                text: "Logout"
-                size_hint: None, None
-                pos_hint: {"center_x": .5}
-                on_release: root.logout()
+                SmartTileWithStar:
+                    id: tile_2
+                    mipmap: True
+                    text: 'lion Replica\n[size=12]Product Recomended[/size]'
+                    stars: 5
+                    font_style: 'Subtitle1'
+                SmartTileWithStar:
+                    id: tile_3
+                    mipmap: True
+                    stars: 3
+                SmartTileWithLabel:
+                    id: tile_1
+                    mipmap: True
+                    text: "Beautiful\n[size=12]beautiful-931152_1280.png[/size]"
+                    font_style: 'Subtitle1'
+                SmartTileWithLabel:
+                    id: tile_4
+                    mipmap: True
+                    text: "Robin\n[size=12]robin-944887_1280.png[/size]"
+                    font_style: 'Subtitle1'
+                SmartTileWithLabel:
+                    id: tile_5
+                    mipmap: True
+                    text: "Kitten\n[size=12]kitten-1049129_1280.png[/size]"
+                    font_style: 'Subtitle1'
+                SmartTileWithLabel:
+                    id: tile_6
+                    stars:5
+                    mipmap: True
+                    text: "Light-Bulb\n[size=12]light-bulb-1042480_1280.png[/size]"
+                    font_style: 'Subtitle1'

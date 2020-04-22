@@ -1,12 +1,24 @@
 from kivy.uix.screenmanager import NoTransition, SlideTransition
 from kivymd.app import MDApp
 from kivymd.uix.navigationdrawer import NavigationLayout
-import json
 from kivy.properties import StringProperty
 from kivymd.uix.list import OneLineIconListItem, MDList
 from kivymd.theming import ThemableBehavior
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
+from kivy.core.window import Window
+
+import sys,os,json,requests,ast
+
+if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
+    os.environ["KITCHEN_SINK_ROOT"] = sys._MEIPASS
+else:
+    sys.path.append(os.path.abspath(__file__).split("demos")[0])
+    os.environ["KITCHEN_SINK_ROOT"] = os.path.dirname(os.path.abspath(__file__))
+os.environ["KITCHEN_SINK_ASSETS"] = os.path.join(
+    os.environ["KITCHEN_SINK_ROOT"], f"asset{os.sep}"
+)
+Window.softinput_mode = "below_target"
 
 
 class Landing(Screen):

@@ -1,14 +1,18 @@
-import os,requests
+import os,requests,json
 from pages.base import BaseScreen
 from kivymd.utils.cropimage import crop_image
 
 
 class PageMainGrid(BaseScreen):
+    def __init__(self, **kwargs):
+        super(PageMainGrid, self).__init__(**kwargs)
+        self.fetch_data_from_database()
+
     def crop_image_for_tile(self, instance, size, path_to_crop_image):
         """Crop images for Grid screen."""
         print(os.path)
         if not os.path.exists(
-             os.path.join(os.environ["KITCHEN_SINK_ASSETS"], path_to_crop_image)
+             os.path.join(os.environ["ASSET"], path_to_crop_image)
 
         ):
             size = (int(size[0]), int(size[1]))
@@ -38,3 +42,5 @@ class PageMainGrid(BaseScreen):
                           headers=headers,
                           verify=True)
         data_json = r.json()['data']
+        print(data_json)
+

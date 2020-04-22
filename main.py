@@ -11,12 +11,12 @@ from kivy.core.window import Window
 import sys,os,json,requests,ast
 
 if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
-    os.environ["KITCHEN_SINK_ROOT"] = sys._MEIPASS
+    os.environ["ASSET"] = sys._MEIPASS
 else:
     sys.path.append(os.path.abspath(__file__).split("demos")[0])
-    os.environ["KITCHEN_SINK_ROOT"] = os.path.dirname(os.path.abspath(__file__))
-os.environ["KITCHEN_SINK_ASSETS"] = os.path.join(
-    os.environ["KITCHEN_SINK_ROOT"], f"asset{os.sep}"
+    os.environ["ROOT"] = os.path.dirname(os.path.abspath(__file__))
+os.environ["ASSET"] = os.path.join(
+    os.environ["ROOT"], f"asset{os.sep}"
 )
 Window.softinput_mode = "below_target"
 

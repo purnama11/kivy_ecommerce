@@ -3,7 +3,7 @@
 <PageMainGrid>
     name:'main_screen'
     on_enter:
-        root.crop_image()
+        self.fetch_data()
     BoxLayout:
         orientation: "vertical"
         spacing: "10dp"
@@ -11,47 +11,10 @@
         ScrollView:
             do_scroll_x: False
             Grid:
+                id:grid_list
                 cols: 2
                 row_default_height: (self.width - self.cols*self.spacing[0])/self.cols
                 row_force_default: True
                 adaptive_height: True
                 padding: dp(4), dp(4)
                 spacing: dp(4)
-
-                SmartTileWithStar:
-                    id: tile_2
-                    name:'tile_2'
-                    mipmap: True
-                    text: 'lion Replica\n[size=12]Product Recomended[/size]'
-                    stars: 5
-                    font_style: 'Subtitle1'
-                SmartTileWithStar:
-                    id: tile_3
-                    name:'tile_3'
-                    mipmap: True
-                    stars: 3
-                SmartTileWithLabel:
-                    id: tile_1
-                    name:'tile_1'
-                    mipmap: True
-                    text: "Beautiful\n[size=12]beautiful-931152_1280.png[/size]"
-                    font_style: 'Subtitle1'
-                SmartTileWithLabel:
-                    id: tile_4
-                    name:'tile_4'
-                    mipmap: True
-                    text: "Robin\n[size=12]robin-944887_1280.png[/size]"
-                    font_style: 'Subtitle1'
-                SmartTileWithLabel:
-                    id: tile_5
-                    name:'tile_5'
-                    mipmap: True
-                    text: "Kitten\n[size=12]kitten-1049129_1280.png[/size]"
-                    font_style: 'Subtitle1'
-                SmartTileWithLabel:
-                    id: tile_6
-                    name:'tile_6'
-                    stars:5
-                    mipmap: True
-                    text: "Light-Bulb\n[size=12]light-bulb-1042480_1280.png[/size]"
-                    font_style: 'Subtitle1'

@@ -1,9 +1,12 @@
-import sys,os,json,requests,ast
+import sys,os,json,requests,ast,certifi
+from kivy.properties import ObjectProperty
 from pages.base import BaseScreen
 from kivymd.utils.cropimage import crop_image
 from os import environ
 from KivyMD.kivymd.uix.gridlayout import MDGridLayout
-from kivy.uix.image import Image
+from kivy.uix.image import Image, AsyncImage
+from kivymd.uix.imagelist import SmartTileWithLabel
+from kivy.network.urlrequest import UrlRequest
 
 class Grid(MDGridLayout):
     pass
@@ -14,13 +17,6 @@ class PageMainGrid(BaseScreen):
         # self.fetch_data_from_database()
         # print(self.ids['grid'])
 
-    def crop_image(self):
-        self.crop_image_for_tile(self.ids.tile_1,self.ids.tile_1.size, f'{environ["ASSET"]}beautiful-931152_1280_tile_crop.png')
-        self.crop_image_for_tile(self.ids.tile_2,self.ids.tile_2.size, f'{environ["ASSET"]}african-lion-951778_1280_tile_crop.png')
-        self.crop_image_for_tile(self.ids.tile_3,self.ids.tile_3.size, f'{environ["ASSET"]}guitar-1139397_1280_tile_crop.png')
-        self.crop_image_for_tile(self.ids.tile_4,self.ids.tile_4.size, f'{environ["ASSET"]}robin-944887_1280_tile_crop.png')
-        self.crop_image_for_tile(self.ids.tile_5,self.ids.tile_5.size, f'{environ["ASSET"]}kitten-1049129_1280_tile_crop.png')
-        self.crop_image_for_tile(self.ids.tile_6,self.ids.tile_6.size, f'{environ["ASSET"]}light-bulb-1042480_1280_tile_crop.png')
 
     def crop_image_for_tile(self, instance, size, path_to_crop_image):
         """Crop images for Grid screen."""
@@ -31,11 +27,12 @@ class PageMainGrid(BaseScreen):
             path_to_origin_image = path_to_crop_image.replace("_tile_crop", "")
             crop_image(size, path_to_origin_image, path_to_crop_image)
         instance.source = path_to_crop_image
-        img = Image(source=instance.source)
-        self.ids.tile_1.add_widget(img)
+        Image(source=instance.source)
+
+        # self.ids..add_widget(img)
 
     #here the problem
-    def fetch_data_from_database(self):
+    def fetch_data(self):
         payload = {
             'limit': 3,
             'offset': 1
@@ -59,14 +56,15 @@ class PageMainGrid(BaseScreen):
         # print(data_json)
         list = []
         for item in data_json:
-            row = {"name": None, "type": None,"image":None}
+            row = {"type_id":None,"name": None, "type": None,"image":None}
+            row['type_id']=item['type_id']
             row['name'] = item['name']
             row['city'] = item['type']
             row['image']=item['detail'][0]['file']
+            # url = f'{environ["ASSET"]}beautiful-931152_1280_tile_crop.png'
+            name=row['image'].replace(" ","%20")
+            url='http://importirjamtangan.com/manage/resources/files/'+name
+            # icon = AsyncImage(source=url)
+            self.ids['grid_list'].add_widget(SmartTileWithLabel(source=url,id=row['type_id'],text=row['name'],mipmap=True,font_style='Subtitle1'))
+            # self.crop_image_for_tile(self.ids[id], self.ids[id].size, url)
 
-            # SmartTileWithLabel:
-            # id: tile_4
-            # mipmap: True
-            # text: "Robin\n[size=12]robin-944887_1280.png[/size]"
-            # font_style: 'Subtitle1'
-            list.append(row)

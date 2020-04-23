@@ -8,7 +8,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
 
-import sys,os,json,requests,ast
+import sys,os,json,requests,ast,certifi
 
 if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
     os.environ["ASSET"] = sys._MEIPASS
@@ -19,6 +19,7 @@ os.environ["ASSET"] = os.path.join(
     os.environ["ROOT"], f"asset{os.sep}"
 )
 Window.softinput_mode = "below_target"
+os.environ['SSL_CERT_FILE'] = certifi.where()
 
 
 class Landing(Screen):

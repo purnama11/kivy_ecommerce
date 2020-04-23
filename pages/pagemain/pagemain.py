@@ -1,12 +1,10 @@
-import sys,os,json,requests,ast,certifi
-from kivy.properties import ObjectProperty
+import os,json,requests
 from pages.base import BaseScreen
 from kivymd.utils.cropimage import crop_image
-from os import environ
 from KivyMD.kivymd.uix.gridlayout import MDGridLayout
-from kivy.uix.image import Image, AsyncImage
+from kivy.uix.image import Image
 from kivymd.uix.imagelist import SmartTileWithLabel
-from kivy.network.urlrequest import UrlRequest
+
 
 class Grid(MDGridLayout):
     pass
@@ -32,9 +30,9 @@ class PageMainGrid(BaseScreen):
         # self.ids..add_widget(img)
 
     #here the problem
-    def fetch_data(self):
+    def fetch_data(self,limit):
         payload = {
-            'limit': 3,
+            'limit': limit,
             'offset': 1
         }
         headers = {
@@ -63,8 +61,13 @@ class PageMainGrid(BaseScreen):
             row['image']=item['detail'][0]['file']
             # url = f'{environ["ASSET"]}beautiful-931152_1280_tile_crop.png'
             name=row['image'].replace(" ","%20")
-            url='http://importirjamtangan.com/manage/resources/files/'+name
-            # icon = AsyncImage(source=url)
-            self.ids['grid_list'].add_widget(SmartTileWithLabel(source=url,id=row['type_id'],text=row['name'],mipmap=True,font_style='Subtitle1'))
-            # self.crop_image_for_tile(self.ids[id], self.ids[id].size, url)
+
+            url='https://importirjamtangan.com/manage/resources/files/' + name
+            self.ids['grid_list'].add_widget(
+                SmartTileWithLabel(source=url, id=row['type_id'], text=row['name'], mipmap=True,
+                                   font_style='Subtitle1'))
+            #dowload file :
+                # urllib.request.urlretrieve(url, f'{environ["ASSET"]}' + name)
+            #crop image:
+                # self.crop_image_for_tile(self.ids[id], self.ids[id].size, url)
 

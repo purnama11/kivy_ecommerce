@@ -7,8 +7,8 @@ from kivymd.theming import ThemableBehavior
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
+import sys,os,json,requests,certifi
 
-import sys,os,json,requests,ast,certifi
 
 if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
     os.environ["ASSET"] = sys._MEIPASS
@@ -21,9 +21,7 @@ os.environ["ASSET"] = os.path.join(
 Window.softinput_mode = "below_target"
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
-
 class Landing(Screen):
-
     def get_data(self):
         f = open("data.json", "rb")
         f_data = f.read().decode()

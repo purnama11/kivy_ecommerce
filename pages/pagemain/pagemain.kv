@@ -1,13 +1,23 @@
 #:import PageMainGrid pages.pagemain.pagemain
 #:import environ os.environ
-<PageMainGrid>
+
+<PageMainGrid>:
     name:'main_screen'
     on_enter:
-        self.fetch_data()
+        self.fetch_data(6)
     BoxLayout:
         orientation: "vertical"
         spacing: "10dp"
         padding: dp(0),dp(60),dp(0),dp(0)
+        MDBoxLayout:
+            orientation: 'vertical'
+            adaptive_height: True
+            padding: dp(48),dp(20),dp(48),dp(0)
+            spacing: dp(15)
+            MDTextField:
+                hint_text: "Cari Produk"
+                padding:dp(20),dp(20),dp(20),dp(20)
+
         ScrollView:
             do_scroll_x: False
             Grid:

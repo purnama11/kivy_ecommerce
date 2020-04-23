@@ -1,4 +1,5 @@
 #:include pages/login/login.kv
+#:include pages/pagelacak/lacak.kv
 #:include pages/pagemain/pagemain.kv
 
 <ItemDrawer>:
@@ -19,52 +20,35 @@
         height: avatar.height
         Image:
             id: avatar
-            size_hint: None, None
-            size: "56dp", "56dp"
-            source: "data/logo/kivy-icon-256.png"
-    MDLabel:
-        text: "KivyMD library"
-        font_style: "Button"
-        size_hint_y: None
-        height: self.texture_size[1]
-    MDLabel:
-        text: "kivydevelopment@gmail.com"
-        font_style: "Caption"
-        size_hint_y: None
-        height: self.texture_size[1]
+            source: "asset/logobesar.png"
+
     ScrollView:
         DrawerList:
             ItemDrawer:
-                icon: 'folder'
+                icon: 'home'
                 text:'Home'
                 on_release:
-                    app.root.ids.screen_manager.current='screen_inicio'
+                    app.root.ids.screen_manager.current='main_screen'
             ItemDrawer:
-                icon: 'account-multiple'
-                text:'Shared with me'
+                icon: 'cloud-search-outline'
+                text:'Lacak'
                 on_release:
-                    app.root.ids.screen_manager.current='screen_segundo'
-            ItemDrawer:
-                icon: 'history'
-                text:'Starrred'
+                    app.root.ids.screen_manager.current='lacak_screen'
 Landing:
+    BoxLayout:
+        orientation: 'vertical'
+        MDToolbar:
+            id: w_toolbar
+            title: "Importir"
+            md_bg_color: app.theme_cls.primary_color
+            left_action_items: []
+        Widget:
     NavigationLayout:
-
         ScreenManager:
             id:screen_manager
             PageLogin:
-
+            PageLacak:
             PageMainGrid:
-                BoxLayout:
-                    orientation: 'vertical'
-                    MDToolbar:
-                        id: w_toolbar
-                        title: "Home Screen"
-                        md_bg_color: app.theme_cls.primary_color
-                        left_action_items: []
-
-                    Widget:
-
         MDNavigationDrawer:
             id: nav_drawer
             ContentNavigationDrawer:

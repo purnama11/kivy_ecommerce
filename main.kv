@@ -1,6 +1,7 @@
 #:include pages/login/login.kv
-#:include pages/pagelacak/lacak.kv
-#:include pages/pagemain/pagemain.kv
+#:include pages/pagetracking/tracking.kv
+#:include pages/pagehome/home.kv
+#:include pages/pagedetail/detail.kv
 
 <ItemDrawer>:
     theme_text_color: "Custom"
@@ -20,6 +21,8 @@
         height: avatar.height
         Image:
             id: avatar
+            size_hint_y: None
+            height: "150dp"
             source: "asset/logobesar.png"
 
     ScrollView:
@@ -49,6 +52,7 @@ Landing:
             PageLogin:
             PageLacak:
             PageMainGrid:
+            PageDetail:
         MDNavigationDrawer:
             id: nav_drawer
             ContentNavigationDrawer:

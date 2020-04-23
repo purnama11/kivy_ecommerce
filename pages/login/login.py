@@ -8,7 +8,7 @@ class PageLogin(BaseScreen):
     def loggin_user(self):
 
         if self.email.text == '1' and self.password.text == '1':
-            self.root.navigate_to("main_screen")
+            self.root.navigate_to("main_screen",None)
             self.enable_nav()
             self.root.set_data("logged", "True")
 

@@ -4,6 +4,7 @@ from kivymd.utils.cropimage import crop_image
 from KivyMD.kivymd.uix.gridlayout import MDGridLayout
 from kivy.uix.image import Image
 from kivymd.uix.imagelist import SmartTileWithLabel
+from functools import partial
 
 
 class Grid(MDGridLayout):
@@ -29,8 +30,9 @@ class PageMainGrid(BaseScreen):
 
         # self.ids..add_widget(img)
 
-    #here the problem
+
     def fetch_data(self,limit):
+        self.ids['grid_list'].clear_widgets()
         payload = {
             'limit': limit,
             'offset': 1
@@ -61,13 +63,23 @@ class PageMainGrid(BaseScreen):
             row['image']=item['detail'][0]['file']
             # url = f'{environ["ASSET"]}beautiful-931152_1280_tile_crop.png'
             name=row['image'].replace(" ","%20")
-
+            id=row['type_id']
             url='https://importirjamtangan.com/manage/resources/files/' + name
-            self.ids['grid_list'].add_widget(
-                SmartTileWithLabel(source=url, id=row['type_id'], text=row['name'], mipmap=True,
-                                   font_style='Subtitle1'))
+            catalogue=SmartTileWithLabel(source=url, id=row['type_id'], text=row['name'], mipmap=True,
+                                   font_style='Subtitle1')
+            if not catalogue is None:
+                catalogue.bind(on_release=partial(self.switch_screen,id))
+            self.ids['grid_list'].add_widget(catalogue)
+
+            # self.ids['grid_list'].add_widget(SmartTileWithLabel(source=url, id=row['type_id'], text=row['name'], mipmap=True,
+            #                        font_style='Subtitle1'))
+            # self.ids['grid_list'].bind(on_release="app.root.screen_manager.current=lacak_screen'")
+
             #dowload file :
                 # urllib.request.urlretrieve(url, f'{environ["ASSET"]}' + name)
             #crop image:
                 # self.crop_image_for_tile(self.ids[id], self.ids[id].size, url)
 
+    def switch_screen(self,*args,**kwargs):
+        self.root.navigate_to("detail_screen",args[0])
+        # print(str(args[0]))

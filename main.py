@@ -9,6 +9,10 @@ from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
 import sys,os,json,requests,certifi
 
+#SCREEN MANAGER INSIDE main.kv
+#Add Screen to it
+#Bandung Software@Soni Ayi Purnama interest to Python Development
+
 
 if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
     os.environ["ASSET"] = sys._MEIPASS
@@ -53,7 +57,7 @@ class Landing(Screen):
         self.ids.screen_manager.current = 'login_screen'
         self.set_data("logged", "False")
 
-    def navigate_to(self, page):
+    def navigate_to(self, page,id):
         self.ids.screen_manager.current = page
 
     def open_menu(self, *args):

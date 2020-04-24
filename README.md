@@ -8,7 +8,7 @@ Request JSON API
 
 <h2>Instalation</h2>
 <b>Install Python Version 3.7.1</b>
-https://www.python.org/downloads/release/python-371/
+<br>https://www.python.org/downloads/release/python-371/
 <br><b>Install Kivy</b>
 <br>https://kivy.org/doc/stable/installation/installation-windows.html
 <br><b>Install KivyMD</b>

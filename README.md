@@ -6,7 +6,7 @@ Request JSON API
 <br>GridLayout Show Image
 <br>Catalogue
 
-<h2>Instalation</h2>
+<h2>Installation</h2>
 <b>Install Python Version 3.7.1</b>
 <br>https://www.python.org/downloads/release/python-371/
 <br><b>Install Kivy</b>
@@ -16,3 +16,6 @@ Request JSON API
 
 <br><b>Bandung Software</b>
 <br>CP: 081222902400
+
+<br>Thanks to Erik Sanberg for Tutorial
+<br>https://github.com/Dirk-Sandberg

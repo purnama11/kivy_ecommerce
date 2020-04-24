@@ -19,3 +19,4 @@ Request JSON API
 
 <br>Thanks to Erik Sandberg for Tutorial and KivyMD Development Team
 <br>https://github.com/Dirk-Sandberg
+<br>https://github.com/HeaTTheatR

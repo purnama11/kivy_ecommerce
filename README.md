@@ -17,5 +17,5 @@ Request JSON API
 <br><b>Bandung Software</b>
 <br>CP: 081222902400
 
-<br>Thanks to Erik Sanberg for Tutorial
+<br>Thanks to Erik Sandberg for Tutorial and KivyMD Development Team
 <br>https://github.com/Dirk-Sandberg

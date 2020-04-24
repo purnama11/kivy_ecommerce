@@ -13,7 +13,8 @@ Request JSON API
 <br>https://kivy.org/doc/stable/installation/installation-windows.html
 <br><b>Install KivyMD</b>
 <br>python -m pip install --force-reinstall git+https://github.com/HeaTTheatR/KivyMD.git
-
+<br><b>Install PyCharm Editor Software</b>
+<br>https://www.jetbrains.com/pycharm/
 <br><b>Bandung Software</b>
 <br>CP: 081222902400
 

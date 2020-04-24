@@ -15,6 +15,7 @@
     orientation: "vertical"
     padding: "8dp"
     spacing: "8dp"
+
     AnchorLayout:
         anchor_x: "left"
         size_hint_y: None
@@ -31,12 +32,16 @@
                 icon: 'home'
                 text:'Home'
                 on_release:
+                    root.nav_drawer.set_state("close")
                     app.root.ids.screen_manager.current='main_screen'
+
             ItemDrawer:
                 icon: 'cloud-search-outline'
                 text:'Lacak'
                 on_release:
+                    root.nav_drawer.set_state("close")
                     app.root.ids.screen_manager.current='lacak_screen'
+
 Landing:
     BoxLayout:
         orientation: 'vertical'
@@ -52,13 +57,16 @@ Landing:
             PageLogin:
             PageLacak:
             PageMainGrid:
+                id:main_screen
+                name:'main_screen'
             PageDetail:
+                id:detail_screen
+                name:'detail_screen'
+
         MDNavigationDrawer:
             id: nav_drawer
             ContentNavigationDrawer:
                 id: content_drawer
-
-
-
+                nav_drawer: nav_drawer
 
 

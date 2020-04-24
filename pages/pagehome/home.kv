@@ -5,6 +5,12 @@
     name:'main_screen'
     on_enter:
         self.fetch_data(6)
+
+    BoxLayout:
+        MDLabel:
+            id:fetch_data
+            opacity:1
+
     BoxLayout:
         orientation: "vertical"
         spacing: "10dp"
@@ -17,6 +23,7 @@
             MDTextField:
                 hint_text: "Cari Produk"
                 padding:dp(20),dp(20),dp(20),dp(20)
+
 
         ScrollView:
             do_scroll_x: False

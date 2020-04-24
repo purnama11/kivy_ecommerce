@@ -1,4 +1,4 @@
-"# kivy e coomerce" 
+"# Kivy KivyMD E-Commerce @Bandung Software" 
 
 <h2>KivyMD Last Update 2020</h2>
 Request JSON API
@@ -15,6 +15,20 @@ Request JSON API
 <br>python -m pip install --force-reinstall git+https://github.com/HeaTTheatR/KivyMD.git
 <br><b>Install PyCharm Editor Software</b>
 <br>https://www.jetbrains.com/pycharm/
+
+<br><h2>Deploying APK</h2>
+<br><b>Install Linux Bash</b>
+<br>1. Open Windows Power Shell
+<br>2. Run Administrator
+<br>3. Type ->Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+<br>4. Open Microsoft Store
+<br>5. Install Ubuntu
+<br><b>Install Depedencies</b>
+<br>1. Depedencies in ->https://github.com/HeaTTheatR/KivyMD-data/blob/master/install-kivy-buildozer-dependencies.sh
+<br>2. Type in Linux Bash with open directory Apliacation ->Buildozer init
+<br>3. Buildozer android debug
+
+<br>
 <br><b>Bandung Software</b>
 <br>CP: 081222902400
 

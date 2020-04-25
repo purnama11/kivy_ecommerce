@@ -1,7 +1,8 @@
+#:include pages/home/home.kv
 #:include pages/login/login.kv
-#:include pages/pagetracking/tracking.kv
-#:include pages/pagehome/home.kv
-#:include pages/pagedetail/detail.kv
+#:include pages/tracking/tracking.kv
+#:include pages/detail/detail.kv
+
 
 <ItemDrawer>:
     theme_text_color: "Custom"
@@ -57,8 +58,6 @@ Landing:
             PageLogin:
             PageLacak:
             PageMainGrid:
-                id:main_screen
-                name:'main_screen'
             PageDetail:
                 id:detail_screen
                 name:'detail_screen'

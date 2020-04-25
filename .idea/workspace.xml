@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b1bd1f0-d3bb-4d36-a301-b33704c33cf4" name="Default Changelist" comment="" />
+    <list default="true" id="0b1bd1f0-d3bb-4d36-a301-b33704c33cf4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/text_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.kv" beforeDir="false" afterPath="$PROJECT_DIR$/main.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagedetail/detail.kv" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagedetail/detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagehome/home.kv" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagehome/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagehome/pagemain_old.kv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagetracking/tracking.kv" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tracking/tracking.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pagetracking/tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tracking/tracking.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,8 +56,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/soni/apk" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -41,9 +80,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="text_input" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text_input.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.text_input" />
       </list>
     </recent_temporary>
   </component>
@@ -60,10 +121,46 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587835008059">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="441" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1587835008059" />
     <state x="392" y="0" key="#main" timestamp="1587549742581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#main/0.0.1366.728@0.0.1366.728" timestamp="1587549742581" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1587837793860">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587837793860" />
+    <state width="1345" height="228" key="GridCell.Tab.0.bottom" timestamp="1587837872732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587837872732" />
+    <state width="1345" height="228" key="GridCell.Tab.0.center" timestamp="1587837872732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587837872732" />
+    <state width="1345" height="228" key="GridCell.Tab.0.left" timestamp="1587837872732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587837872732" />
+    <state width="1345" height="228" key="GridCell.Tab.0.right" timestamp="1587837872732">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="228" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587837872732" />
   </component>
 </project>

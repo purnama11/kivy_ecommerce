@@ -8,13 +8,12 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
 import sys,os,json,requests,certifi
-
-pid=""
+from kivy.clock import Clock
 
 #SCREEN MANAGER INSIDE main.kv
 #Add Screen to it
 #Bandung Software@Soni Ayi Purnama interest to Python Development
-from pagedetail.detail import PageDetail
+# from detail.detail import PageDetail
 
 if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
     os.environ["ASSET"] = sys._MEIPASS
@@ -31,6 +30,7 @@ class Landing(Screen):
 
     def __init__(self, *args,**kwargs):
         super(Landing, self).__init__(*args,**kwargs)
+        # Clock.schedule_once(self.check_logged)
 
     def get_data(self):
         f = open("data.json", "rb")
@@ -100,5 +100,7 @@ class Main(MDApp):
         self.theme_cls.primary_palette = "Cyan"
 
     def build(self):
-        self.root.check_logged()
+        Clock.schedule_once(self.root.check_logged)
+
+
 Main().run()

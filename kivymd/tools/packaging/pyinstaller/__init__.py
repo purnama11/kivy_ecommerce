@@ -21,7 +21,7 @@ Example of .spec file
     path = os.path.abspath(".")
 
     a = Analysis(
-        ["home.py"],
+        ["main.py"],
         pathex=[path],
         hookspath=[kivymd_hooks_path],
         win_no_prefer_redirects=False,

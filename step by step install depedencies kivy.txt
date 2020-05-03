@@ -1,0 +1,23 @@
+Open WSL Linux 18.04
+
+1. sudo apt-get install git
+
+2. sudo apt-get install -y python3-setuptools
+
+3. install -> buildozer 
+	   git clone https://github.com/kivy/buildozer
+	   cd buildozer
+	   sudo python3 setup.py install
+
+
+4. install -> python3.6
+
+5. see -> buildozer read doc for ask dependencies
+       https://buildozer.readthedocs.io/en/latest/installation.html
+
+6. Cyhton version -> 0.28.2 -> pip3 install --user --upgrade cython==0.28.2 virtualenv
+
+7. buildozer android debug deploy run logcat
+
+8. crash virtualenv
+   https://askubuntu.com/questions/1233200/buildozer-crashed-with-env-env-must-be-a-dict/1233673#1233673?newreg=aa1dbaea9b914472a7d9402b55150918

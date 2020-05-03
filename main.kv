@@ -25,7 +25,7 @@
             id: avatar
             size_hint_y: None
             height: "150dp"
-            source: "asset/logobesar.png"
+            source: "assets/logobesar.png"
 
     ScrollView:
         DrawerList:
@@ -50,9 +50,12 @@ Landing:
             id: w_toolbar
             title: "Importir"
             md_bg_color: app.theme_cls.primary_color
+            background_palette: "Primary"
             left_action_items: []
         Widget:
     NavigationLayout:
+
+#PAGE -> SCREEN
         ScreenManager:
             id:screen_manager
             PageLogin:
@@ -61,6 +64,14 @@ Landing:
             PageDetail:
                 id:detail_screen
                 name:'detail_screen'
+            Screen:
+                id:no_conn
+                name:'no_conn'
+                BoxLayout:
+                    orintetation:'vertical'
+                    MDLabel:
+                        text:'No Connection'
+
 
         MDNavigationDrawer:
             id: nav_drawer

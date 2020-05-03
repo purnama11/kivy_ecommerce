@@ -4,39 +4,41 @@
 title = Importir Jam Tangan
 
 # (str) Package name
-package.name = importir
+package.name = app
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.bandungsoftware
+package.domain = org.importir
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,jpeg,ttf,md,kv,json,atlas
+source.include_exts = py,png,jpg,jpeg,ttf,md,kv,json,atlas,txt
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = assets/*
 
+# (str) Application versioning (method 1)
+version = 0.1
+
 # (str) Application versioning (method 2)
-version.regex = __version__ = ['"](.*)['"]
-version.filename = %(source.dir)s/kivymd/__init__.py
+#version.regex = __version__ = ['"](.*)['"]
+#version.filename = %(source.dir)s/kivymd/__init__.py
+
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-#git+https://github.com/HeaTTheatR/KivyMD.git
-
-requirements = python3,kivy==1.11.1,pillow,pygments,requests,certifi,kivymd
+requirements = python3,kivy,pillow,pygments,requests,certifi,kivymd
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
-requirements.source.kivymd =../../kivymd
+requirements.source.kivymd =kivymd
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/asset/splash.png
+presplash.filename = %(source.dir)s/assets/splash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/asset/logo.png
+icon.filename = %(source.dir)s/assets/logo.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -54,7 +56,7 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE
 android.api = 28
 
 # (int) Minimum API your APK will support.
-android.minapi = 23
+android.minapi = 21
 
 # (str) Android NDK version to use
 android.ndk = 19b

@@ -7,7 +7,11 @@ title = Importir Jam Tangan
 package.name = myimportir
 
 # (str) Package domain (needed for android/ios packaging)
+<<<<<<< HEAD
 package.domain = org.impor
+=======
+package.domain = com.impor
+>>>>>>> 58df59f4277fc1e7cd20703e170e04bc205dab7c
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -16,17 +20,25 @@ source.dir = .
 source.include_exts = py,png,jpg,jpeg,ttf,kv,json,atlas
 
 # (list) List of inclusions using pattern matching
-source.include_patterns = assets/*
+source.include_patterns = assets/*,assets/*.png
 
 # (str) Application versioning (method 2)
 #version.regex = __version__ = ['"](.*)['"]
 #version.filename = %(source.dir)s/../../kivymd/__init__.py
 
+<<<<<<< HEAD
 version=12
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = hostpython3==3.7.5,python3==3.7.5,kivy==1.11.1,git+https://github.com/HeaTTheatR/KivyMD.git,sqlite3,pillow,pygments,requests,certifi
+=======
+version=1
+
+# (list) Application requirements
+# comma separated e.g. requirements = sqlite3,kivy
+requirements = python3,kivy==1.11.1,git+https://github.com/HeaTTheatR/KivyMD.git,pillow,pygments,requests
+>>>>>>> 58df59f4277fc1e7cd20703e170e04bc205dab7c
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes

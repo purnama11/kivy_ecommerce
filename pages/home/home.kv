@@ -3,12 +3,7 @@
 <PageMainGrid>:
     name:'main_screen'
     on_enter:
-        self.fetch_data(6)
-
-    BoxLayout:
-        MDLabel:
-            id:fetch_data
-            opacity:1
+        self.fetch_data(6,None)
 
     BoxLayout:
         orientation: "vertical"
@@ -21,11 +16,11 @@
             spacing: dp(15)
             MDTextField:
                 id: search_text
+                color: 'custom'
                 multiline:False
                 hint_text: "Cari Produk"
                 padding:dp(20),dp(20),dp(20),dp(20)
-                on_text_validate:self.parent.parent.parent.on_enter()
-
+                on_text_validate:self.parent.parent.parent.on_text_validate()
 
         ScrollView:
             do_scroll_x: False

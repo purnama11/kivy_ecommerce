@@ -9,28 +9,28 @@ from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
 import sys,os,json,requests,certifi
 from kivy.clock import Clock
+from urllib.request import urlopen
 
 #SCREEN MANAGER INSIDE main.kv
 #Add Screen to it
 #Bandung Software@Soni Ayi Purnama interest to Python Development
 # from detail.detail import PageDetail
 
-if getattr(sys, "frozen", False):  # bundle mode with PyInstaller
-    os.environ["ASSET"] = sys._MEIPASS
-else:
-    sys.path.append(os.path.abspath(__file__).split("demos")[0])
-    os.environ["ROOT"] = os.path.dirname(os.path.abspath(__file__))
-os.environ["ASSET"] = os.path.join(
-    os.environ["ROOT"], f"asset{os.sep}"
-)
 Window.softinput_mode = "below_target"
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
 class Landing(Screen):
 
-    def __init__(self, *args,**kwargs):
-        super(Landing, self).__init__(*args,**kwargs)
-        # Clock.schedule_once(self.check_logged)
+    # def __init__(self, **kwargs):
+    #     super().__init__(**kwargs)
+    #     # Clock.schedule_once(self.check_logged)
+    def internet_on(self):
+        try:
+            response = urlopen('https://www.importirjamtangan.com/', timeout=10)
+            print('good connection')
+            return True
+        except:
+            return False
 
     def get_data(self):
         f = open("data.json", "rb")
@@ -89,18 +89,21 @@ class ItemDrawer(OneLineIconListItem):
     icon = StringProperty()
 
 class MainNavigationLayout(NavigationLayout):
-    def __init__(self, *args, **kwargs):
-        NavigationLayout.__init__(self, *args, **kwargs)
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
         self._panel_disable = True
 
 
 class Main(MDApp):
-    def __init__(self, *args, **kwargs):
-        MDApp.__init__(self, *args, **kwargs)
-        self.theme_cls.primary_palette = "Cyan"
+    # def __init__(self, **kwargs):
+    #     super().__init__(**kwargs)
 
     def build(self):
-        Clock.schedule_once(self.root.check_logged)
+        self.theme_cls.primary_palette = "Cyan"
+        if self.root.internet_on()==True:
+            Clock.schedule_once(self.root.check_logged)
+        else:
+            self.root.ids.screen_manager.current = "no_conn"
 
-
-Main().run()
+if __name__=="__main__":
+    Main().run()

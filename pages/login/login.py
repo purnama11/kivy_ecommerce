@@ -14,4 +14,3 @@ class PageLogin(BaseScreen):
     def enable_nav(self):
             menu = ["menu", self.root.open_menu]
             self.root.ids.w_toolbar.left_action_items.append(menu)
-            print(self.root.ids.w_toolbar)

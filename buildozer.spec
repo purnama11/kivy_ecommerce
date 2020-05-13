@@ -4,39 +4,39 @@
 title = Importir Jam Tangan
 
 # (str) Package name
-package.name = importir
+package.name = myimportir
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.bandungsoftware
+package.domain = org.impor
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,jpeg,ttf,md,kv,json,atlas
+source.include_exts = py,png,jpg,jpeg,ttf,kv,json,atlas
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = assets/*
 
 # (str) Application versioning (method 2)
-version.regex = __version__ = ['"](.*)['"]
-version.filename = %(source.dir)s/kivymd/__init__.py
+#version.regex = __version__ = ['"](.*)['"]
+#version.filename = %(source.dir)s/../../kivymd/__init__.py
+
+version=12
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-#git+https://github.com/HeaTTheatR/KivyMD.git
-
-requirements = python3,kivy==1.11.1,pillow,pygments,requests,certifi,kivymd
+requirements = hostpython3==3.7.5,python3==3.7.5,kivy==1.11.1,git+https://github.com/HeaTTheatR/KivyMD.git,sqlite3,pillow,pygments,requests,certifi
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
-requirements.source.kivymd =../../kivymd
+requirements.source.kivymd = ../KivyMD/kivymd
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/asset/splash.png
+presplash.filename = %(source.dir)s/assets/splash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/asset/logo.png
+icon.filename = %(source.dir)s/assets/logo.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -54,10 +54,12 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE
 android.api = 28
 
 # (int) Minimum API your APK will support.
-android.minapi = 23
+android.minapi = 21
 
 # (str) Android NDK version to use
 android.ndk = 19b
+
+p4a.branch=develop
 
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
@@ -71,7 +73,7 @@ android.skip_update = False
 android.accept_sdk_license = True
 
 # (str) Android logcat filters to use
-android.logcat_filters = *:S python:D
+# android.logcat_filters = *:S python:D
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.arch = armeabi-v7a

@@ -5,8 +5,8 @@ import requests,json,certifi
 
 
 class PageDetail(BaseScreen):
-    def __init__(self, *args,**kwargs):
-        super(PageDetail, self).__init__(*args,**kwargs)
+    # def __init__(self,**kwargs):
+    #     super().__init__(**kwargs)
 
     def on_enter(self):
         if (not self.ids.fetch_id.text is None) and self.ids.fetch_id.text==self.ids.product_id.text:

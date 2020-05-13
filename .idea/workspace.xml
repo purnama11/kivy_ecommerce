@@ -20,122 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b1bd1f0-d3bb-4d36-a301-b33704c33cf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/detail/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/home/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Latte.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Latte.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/Pollywog.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Pollywog.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/about-us.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/about-us.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/african-lion-951778_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/african-lion-951778_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/african-lion-951778_1280_tile_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/african-lion-951778_1280_tile_crop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/andre-rodriges.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/andre-rodriges.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/basil.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/basil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/beautiful-931152_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/beautiful-931152_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/beautiful-931152_1280_tile_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/beautiful-931152_1280_tile_crop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/blur.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blur.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/camera.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/camera.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/clock-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clock-9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/cloud-upload.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cloud-upload.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/drawer_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/drawer_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/events.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/events.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/facebook-box.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/facebook-box.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/facebook-flat-round.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/facebook-flat-round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/facebook-round.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/facebook-round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/facebook.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/google-flat-round.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/google-flat-round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/gradient.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gradient.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/guitar-1139397_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/guitar-1139397_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/guitar-1139397_1280_tile_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/guitar-1139397_1280_tile_crop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/heattheatr.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/heattheatr.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/kitten-1049129_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kitten-1049129_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/kitten-1049129_1280_tile_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kitten-1049129_1280_tile_crop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/kivy-logo-white-512.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kivy-logo-white-512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/kivymd_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kivymd_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/light-bulb-1042480_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/light-bulb-1042480_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/light-bulb-1042480_1280_tile_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/light-bulb-1042480_1280_tile_crop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/logobesar.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logobesar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Backdrop.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Backdrop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Banner.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Banner.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Bottom-App-Bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Bottom-App-Bar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Bottom-Navigation.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Bottom-Navigation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Bottom-Sheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Bottom-Sheet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Button.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Button.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Card-Post.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Card-Post.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Chip.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Chip.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Date-Picker.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Date-Picker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Dialog.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Dialog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-DropDownItem-with-ScrollView.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-DropDownItem-with-ScrollView.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-DropDownItem.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-DropDownItem.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Expansion-Panel.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Expansion-Panel.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Fan-Screen-Manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Fan-Screen-Manager.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-File-Manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-File-Manager.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-List-Item-with-Checkbox.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-List-Item-with-Checkbox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Navigation-Drawer-Custom.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Navigation-Drawer-Custom.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Navigation-Drawer-with-custom-NavigationDrawerIconButton.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Navigation-Drawer-with-custom-NavigationDrawerIconButton.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Navigation-Drawer.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Navigation-Drawer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Progress-Loader.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Progress-Loader.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Refresh-Layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Refresh-Layout.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Slider-and-ProgressBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Slider-and-ProgressBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-SmartTileWithStar.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-SmartTileWithStar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Snackbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Snackbar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Stack-Floating-Buttons.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Stack-Floating-Buttons.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Swiper-Manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Swiper-Manager.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Tabs.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Tabs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Text-Field-Rectangle.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Text-Field-Rectangle.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Text-Field-Round.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Text-Field-Round.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Text-Field.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Text-Field.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Time-Picker.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Time-Picker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-Tooltips.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-Tooltips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Components-User-Animation-Card.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Components-User-Animation-Card.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/md/Toast.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/md/Toast.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/mountaino.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mountaino.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/palette.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/palette.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/presplash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/presplash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/robin-944887_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/robin-944887_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/robin-944887_1280_tile_crop.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/robin-944887_1280_tile_crop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shadow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/shrine.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shrine.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/tangerines-1111529_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tangerines-1111529_1280.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/twitter-flat-round.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/twitter-flat-round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/twitter-red.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/twitter-red.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/twitter-round.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/twitter-round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/twitter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ua_scroonge.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ua_scroonge.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/youtube-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/youtube-play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildozer.spec" beforeDir="false" afterPath="$PROJECT_DIR$/buildozer.spec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivymd/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivymd/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivymd/tools/packaging/pyinstaller/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivymd/tools/packaging/pyinstaller/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivymd/uix/dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivymd/uix/dialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivymd/uix/dropdownitem.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivymd/uix/dropdownitem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivymd/uix/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivymd/uix/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivymd/uix/selectioncontrol.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivymd/uix/selectioncontrol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.kv" beforeDir="false" afterPath="$PROJECT_DIR$/main.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.kv" beforeDir="false" afterPath="$PROJECT_DIR$/root.kv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/detail/detail.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail/detail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/home.kv" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.kv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login/login.kv" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tracking/tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tracking/tracking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text_input.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -246,25 +134,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#main/0.0.1366.728@0.0.1366.728" timestamp="1587549742581" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588109985062">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588949464743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588109985062" />
-    <state width="1345" height="145" key="GridCell.Tab.0.bottom" timestamp="1588501619942">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588949464743" />
+    <state width="1345" height="145" key="GridCell.Tab.0.bottom" timestamp="1588780828538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="145" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588501619942" />
-    <state width="1345" height="145" key="GridCell.Tab.0.center" timestamp="1588501619941">
+    <state width="1345" height="145" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588780828538" />
+    <state width="1345" height="145" key="GridCell.Tab.0.center" timestamp="1588780828538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="145" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588501619941" />
-    <state width="1345" height="145" key="GridCell.Tab.0.left" timestamp="1588501619941">
+    <state width="1345" height="145" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588780828538" />
+    <state width="1345" height="145" key="GridCell.Tab.0.left" timestamp="1588780828538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="145" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588501619941" />
-    <state width="1345" height="145" key="GridCell.Tab.0.right" timestamp="1588501619942">
+    <state width="1345" height="145" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588780828538" />
+    <state width="1345" height="145" key="GridCell.Tab.0.right" timestamp="1588780828538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="145" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588501619942" />
+    <state width="1345" height="145" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588780828538" />
   </component>
 </project>

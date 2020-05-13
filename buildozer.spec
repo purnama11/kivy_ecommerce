@@ -4,35 +4,33 @@
 title = Importir Jam Tangan
 
 # (str) Package name
-package.name = app
+package.name = importir
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.importir
+package.domain = com.impor
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,jpeg,ttf,md,kv,json,atlas,txt
+source.include_exts = py,png,jpg,jpeg,ttf,kv,json,atlas
 
 # (list) List of inclusions using pattern matching
-source.include_patterns = assets/*
-
-# (str) Application versioning (method 1)
-version = 0.1
+source.include_patterns = assets/*,assets/*.png
 
 # (str) Application versioning (method 2)
 #version.regex = __version__ = ['"](.*)['"]
-#version.filename = %(source.dir)s/kivymd/__init__.py
+#version.filename = %(source.dir)s/../../kivymd/__init__.py
 
+version=1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,pygments,requests,certifi,kivymd
+requirements = python3,kivy==1.11.1,git+https://github.com/HeaTTheatR/KivyMD.git,pillow,pygments,requests
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
-requirements.source.kivymd =kivymd
+requirements.source.kivymd = ../KivyMD/kivymd
 
 # (str) Presplash of the application
 presplash.filename = %(source.dir)s/assets/splash.png
@@ -61,6 +59,8 @@ android.minapi = 21
 # (str) Android NDK version to use
 android.ndk = 19b
 
+p4a.branch=develop
+
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
 # when an update is due and you just want to test/build your package
@@ -73,7 +73,7 @@ android.skip_update = False
 android.accept_sdk_license = True
 
 # (str) Android logcat filters to use
-android.logcat_filters = *:S python:D
+# android.logcat_filters = *:S python:D
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 android.arch = armeabi-v7a

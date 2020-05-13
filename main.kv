@@ -1,3 +1,9 @@
+#:include pages/home/home.kv
+#:include pages/login/login.kv
+#:include pages/tracking/tracking.kv
+#:include pages/detail/detail.kv
+
+
 <ItemDrawer>:
     theme_text_color: "Custom"
     on_release: self.parent.set_color_item(self)
@@ -53,7 +59,6 @@ Landing:
         ScreenManager:
             id:screen_manager
             PageLogin:
-<<<<<<< HEAD
             PageLacak:
             PageMainGrid:
             PageDetail:
@@ -68,71 +73,6 @@ Landing:
                         text:'No Connection'
 
 
-=======
-                name: "login_screen"
-                email: email_input
-                password: password_input
-                StackLayout:
-                    orientation: "lr-tb"
-                    BoxLayout:
-                        orientation: "vertical"
-                        size_hint_y: .5
-                        spacing: 20
-                        MDTextField:
-                            id: email_input
-                            normal_color: [0, 0, 0, 0.2]
-                            active_color: [0, 0, 0, 0.2]
-                            icon_type: "left"
-                            size_hint: .5, None
-                            pos_hint: {"center_x": .5}
-                            hint_text: "Email"
-                        MDTextField:
-                            id: password_input
-                            password: True
-                            normal_color: [0, 0, 0, 0.2]
-                            active_color: [0, 0, 0, 0.2]
-                            icon_type: "left"
-                            icon_left: "lock"
-                            size_hint: .5, None
-                            pos_hint: {"center_x": .5}
-                            hint_text: "Password"
-                        MDRaisedButton:
-                            text: "Login"
-                            size_hint: .3, None
-                            pos_hint: {"center_x": .5}
-                            on_release:self.parent.parent.parent.loggin_user()
-            PageHome:
-                name:'main_screen'
-                id:main_screen
-                on_enter:
-                    self.fetch_data(6,None)
-                BoxLayout:
-                    orientation: "vertical"
-                    spacing: "10dp"
-                    padding: dp(0),dp(60),dp(0),dp(0)
-                    MDBoxLayout:
-                        orientation: 'vertical'
-                        adaptive_height: True
-                        padding: dp(48),dp(20),dp(48),dp(0)
-                        spacing: dp(15)
-                        MDTextField:
-                            id: search_text
-                            color: 'custom'
-                            multiline:False
-                            hint_text: "Cari Produk"
-                            padding:dp(20),dp(20),dp(20),dp(20)
-                            on_text_validate:self.parent.parent.parent.on_text_validate()
-                    ScrollView:
-                        do_scroll_x: False
-                        Grid:
-                            id:grid_list
-                            cols: 2
-                            row_default_height: (self.width - self.cols*self.spacing[0])/self.cols
-                            row_force_default: True
-                            adaptive_height: True
-                            padding: dp(4), dp(4)
-                            spacing: dp(4)
->>>>>>> 58df59f4277fc1e7cd20703e170e04bc205dab7c
         MDNavigationDrawer:
             id: nav_drawer
             ContentNavigationDrawer:

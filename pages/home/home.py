@@ -1,34 +1,38 @@
 import os,json,requests,certifi
-
 from kivy.clock import Clock
-
 from pages.base import BaseScreen
-from kivymd.utils.cropimage import crop_image
+#from kivymd.utils.cropimage import crop_image
 from kivymd.uix.gridlayout import MDGridLayout
-from kivy.uix.image import Image
+#from kivy.uix.image import Image
 from kivymd.uix.imagelist import SmartTileWithLabel
 from functools import partial
+
 
 class Grid(MDGridLayout):
     pass
 
 class PageMainGrid(BaseScreen):
+    lval = 0
     # def __init__(self,**kwargs):
     #     super().__init__(**kwargs)
 
-    def crop_image_for_tile(self, instance, size, path_to_crop_image):
-        """Crop images for Grid screen."""
-        if not os.path.exists(
-             os.path.join(os.environ["ASSETS"], path_to_crop_image)
-        ):
-            size = (int(size[0]), int(size[1]))
-            path_to_origin_image = path_to_crop_image.replace("_tile_crop", "")
-            crop_image(size, path_to_origin_image, path_to_crop_image)
-        instance.source = path_to_crop_image
-        Image(source=instance.source)
+    # def crop_image_for_tile(self, instance, size, path_to_crop_image):
+    #     """Crop images for Grid screen."""
+    #     if not os.path.exists(
+    #          os.path.join(os.environ["ASSETS"], path_to_crop_image)
+    #     ):
+    #         size = (int(size[0]), int(size[1]))
+    #         path_to_origin_image = path_to_crop_image.replace("_tile_crop", "")
+    #         crop_image(size, path_to_origin_image, path_to_crop_image)
+    #     instance.source = path_to_crop_image
+    #     Image(source=instance.source)
+    #
+    #     # self.ids..add_widget(img)
 
-        # self.ids..add_widget(img)
+
     def fetch_data(self,limit,query):
+        limit =self.lval+limit
+
         if self.root.internet_on()==True:
             self.ids['grid_list'].clear_widgets()
             if query is None:
@@ -83,6 +87,7 @@ class PageMainGrid(BaseScreen):
                         # urllib.request.urlretrieve(url, f'{environ["ASSET"]}' + name)
                     #crop image:
                         # self.crop_image_for_tile(self.ids[id], self.ids[id].size, url)
+                    self.lval=limit
             elif r.status_code==400:
                 pass
             elif r.status_code==500:
@@ -95,8 +100,6 @@ class PageMainGrid(BaseScreen):
         query=self.ids.search_text.text
         self.fetch_data(6,query)
 
-
     def switch_screen(self,*args,**kwargs):
         self.root.navigate_to("detail_screen",args[0])
-
         # print(str(args[0]))

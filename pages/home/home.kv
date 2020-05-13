@@ -23,6 +23,7 @@
                 on_text_validate:self.parent.parent.parent.on_text_validate()
 
         ScrollView:
+            on_scroll_move: self.parent.parent.fetch_data(2,None)
             do_scroll_x: False
             Grid:
                 id:grid_list

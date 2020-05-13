@@ -1,12 +1,18 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.image import Image, AsyncImage
 from pages.base import BaseScreen
-import requests,json,certifi
-
+import requests,json
+from kivy.core.window import Window
 
 class PageDetail(BaseScreen):
-    # def __init__(self,**kwargs):
-    #     super().__init__(**kwargs)
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        Window.bind(on_keyboard=self.back_click)
+
+    def back_click(self,window,key,*largs):
+        if key == 27:
+            self.root.navigate_to("main_screen", None)
+            return True
 
     def on_enter(self):
         if (not self.ids.fetch_id.text is None) and self.ids.fetch_id.text==self.ids.product_id.text:

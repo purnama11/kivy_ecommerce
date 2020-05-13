@@ -7,29 +7,22 @@ from kivymd.theming import ThemableBehavior
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
 from kivy.core.window import Window
-import sys,os,json,requests,certifi
+import os,json,certifi
 from kivy.clock import Clock
 from urllib.request import urlopen
-
-#SCREEN MANAGER INSIDE main.kv
-#Add Screen to it
-#Bandung Software@Soni Ayi Purnama interest to Python Development
-# from detail.detail import PageDetail
 
 Window.softinput_mode = "below_target"
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
 class Landing(Screen):
 
-    # def __init__(self, **kwargs):
-    #     super().__init__(**kwargs)
-    #     # Clock.schedule_once(self.check_logged)
     def internet_on(self):
         try:
             response = urlopen('https://www.importirjamtangan.com/', timeout=10)
             print('good connection')
             return True
         except:
+            print('bad connection')
             return False
 
     def get_data(self):
@@ -68,7 +61,6 @@ class Landing(Screen):
         if not id is None:
             self.ids.detail_screen.ids.product_id.text=id
 
-
     def open_menu(self, *args):
         self.ids.nav_drawer.toggle_nav_drawer()
 
@@ -95,9 +87,6 @@ class MainNavigationLayout(NavigationLayout):
 
 
 class Main(MDApp):
-    # def __init__(self, **kwargs):
-    #     super().__init__(**kwargs)
-
     def build(self):
         self.theme_cls.primary_palette = "Cyan"
         if self.root.internet_on()==True:

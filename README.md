@@ -1,4 +1,4 @@
-"# Kivy KivyMD E-Commerce @Bandung Software" 
+use"# Kivy KivyMD E-Commerce @Bandung Software" 
 
 <h2>KivyMD Last Update 2020</h2>
 Request JSON API
@@ -30,7 +30,6 @@ Request JSON API
 
 <br>
 <br><b>Bandung Software</b>
-<br>CP: 081222902400
 
 <br>Thanks to Erik Sandberg for Tutorial and KivyMD Development Team
 <br>https://github.com/Dirk-Sandberg
